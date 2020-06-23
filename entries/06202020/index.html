@@ -93,7 +93,8 @@ a:hover {
   font-weight: 300;
   display: block;
   position: relative;
-  right: -300px;
+  left: 33%;
+  margin-top: .5%;
 }
 
 #lists {
@@ -109,23 +110,34 @@ a:hover {
 }
 
 @media only screen and (max-width: 899px) {
-  #img-caption {
-    display: block;
-    position: relative;
-    right: -90px;
-  }
 
   a {
   color: inherit;
-  font-weight: bold;
-  text-decoration: underline;
-}
+  font-weight: normal;
+  }
 
 #lists {
   font-size: 1.6rem;
   width: 100%;
+  }  
 }
 
+@media only screen and (max-width: 800px) {
+  #img-caption {
+    display: block;
+    position: relative;
+    left: 25%;
+    margin-top: .5%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #img-caption {
+    display: block;
+    position: relative;
+    left: 10%;
+    margin-top: .5%;
+  }
 }
 
     </style>
