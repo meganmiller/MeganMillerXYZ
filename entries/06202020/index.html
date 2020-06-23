@@ -4,10 +4,18 @@
     <meta charset="utf-8">
     <title>06/20/2020 - Call It A Tribute</title>
     <style>
-        html {
+
+html {
   font-size: 10px;
   height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   }
+
+#main {
+  width: 70%;
+  margin: 0 auto;
+}
 
 body {
   background-color: whitesmoke; 
@@ -16,7 +24,7 @@ body {
   font-size: 2rem;
   font-weight: 100;
   height: 100%;
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -30,6 +38,7 @@ h1 {
 
 figure {
   text-align: center;
+  position: relative;
 }
 
 a {
@@ -79,14 +88,38 @@ a:hover {
   font-family: 'Avenir Next', 'Ideal Sans', sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  text-align: left;
-  text-indent: 120px;
+  display: block;
+  position: relative;
+  right: -300px;
 }
 
 #lists {
   font-size: 1.6rem;
   width: 650px;
 }
+
+@media only screen and (max-width: 1200px) {
+  #main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  #img-caption {
+    display: block;
+    position: relative;
+    right: -90px;
+  }
+
+  a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+}
+
     </style>
 </head>
 <main class="maincontainer" id="main">
@@ -129,8 +162,8 @@ a:hover {
     <br>
     <br>
     <div id="tip"> A tip: If you open an incognito Chrome browser window, and insert a period after the domain, you can read these New York Times articles without a subscription.<br> 
-    For example: <a id="tribute-link" target="_blank" href="https://www.nytimes.com./11overlooked-johnson.html"> https://www.nytimes.com./11overlooked-johnson.html</a> <br>
-    Instead of:  <a id="nytimes2" target="_blank" href="https://www.nytimes.com/11overlooked-johnson.html"> https://www.nytimes.com/11overlooked-johnson.html</a>
+    For example: <a id="tribute-link" target="_blank" href="https://www.nytimes.com./interactive/2018/obituaries/overlooked-marsha-p-johnson.html"> https://www.nytimes.com./interactive/2018/obituaries/overlooked-marsha-p-johnson.html</a> <br>
+    Instead of:  <a id="nytimes2" target="_blank" href="https://www.nytimes.com/interactive/2018/obituaries/overlooked-marsha-p-johnson.html"> https://www.nytimes.com/interactive/2018/obituaries/overlooked-marsha-p-johnson.html</a>
     <br>
     <br>
     This also works for watching YouTube without ads, but please use this trick for good, not for getting more into <a id="nytimes2" target="_blank" href="https://www.theatlantic.com/magazine/archive/2020/06/qanon-nothing-can-stop-what-is-coming/610567/">QAnon</a> or whatever.
