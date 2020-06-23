@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
     <meta charset="utf-8">
     <title>06/20/2020 - Call It A Tribute</title>
@@ -8,13 +10,14 @@
 html {
   font-size: 10px;
   height: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  max-width: 100%;
   }
 
 #main {
   width: 70%;
   margin: 0 auto;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 body {
@@ -70,7 +73,7 @@ a:hover {
   font-style: italic;
   border-style: solid;
   border-width: thin;
-  padding: 15px;
+  padding: 3%;
 }
 
 .responsive-img {
@@ -79,7 +82,7 @@ a:hover {
 }
 
 #image {
-  width: 700px;
+  width: 80%;
   display: block;
   margin: auto;
 }
@@ -95,7 +98,7 @@ a:hover {
 
 #lists {
   font-size: 1.6rem;
-  width: 650px;
+  width: 60%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -116,6 +119,11 @@ a:hover {
   color: inherit;
   font-weight: bold;
   text-decoration: underline;
+}
+
+#lists {
+  font-size: 1.6rem;
+  width: 100%;
 }
 
 }
